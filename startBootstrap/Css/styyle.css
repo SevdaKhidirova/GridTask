@@ -1,0 +1,84 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Radio Canada', sans-serif;
+}
+.container{
+    width: 60vw;
+    margin: auto;
+}
+.navbar{
+    background-color: white;
+}
+.title{
+    padding-top: 20px;
+    height: 100px;
+}
+.start{
+    float: left;
+}
+.menu{
+    float: right;
+}
+ul li {
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    padding-left: 10px;
+    color: black;
+    font-size: 20px;
+}
+.title-image{
+    background-image: url(../images/bg-masthead.jpg);
+    height: calc(100vh - 100px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: center;
+    position: relative;
+}
+.title-image::after{
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-color: rgb(133, 110, 78);
+    opacity: .4;
+}
+.text-area{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.text-area .free{
+    font-size: 39px;
+    color: white;
+}
+.line{
+    position: relative;
+    width: 10%;
+    height: 1px;
+    color: orangered;
+    border: 2px solid orangered;
+    left: 47%;
+    margin: 10px;
+}
+.text-area .start{
+    color: white;
+    font-size: 23px;
+}
+.text-area .find{
+    width: 150px;
+    height: 60px;
+    background-color: orangered;
+    color: white;
+    border-radius: 18px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+}
